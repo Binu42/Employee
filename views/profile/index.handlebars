@@ -1,0 +1,39 @@
+<div class="row mt-5">
+    {{#each profile}}
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card card-width">
+            <div class="card-body text-center">
+              <img src="img/person.jpg" class="img-fluid top rounded-circle w-50 mb-3">
+              <h3 class="text-uppercase details">{{name}}</h3>
+              <h5 class="text-muted">{{post}}</h5>
+              <div>
+                  <p>{{truncate description}}</p>
+              </div>
+                <a href="/profile/{{id}}" class="btn btn-outline-danger my-2">More Details</a>
+              <div class="d-flex justify-content-center">
+                <div class="p-2">
+                  <a href="{{social.facebook}}" target="_blank">
+                    <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                </div>
+                <div class="p-2">
+                  <a href="{{social.twitter}}" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="p-2">
+                  <a href="{{social.linkedin}}" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <div class="p-2">
+                  <a href="{{social.github}}" target="_blank"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+                </div>
+                <div class="p-2">
+                  <a href="{{social.instagram}}" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    {{else}}
+    <div>
+        <p class="text-white text-center">No Employee</p>
+    </div>
+    {{/each}}
+</div>
