@@ -1,0 +1,169 @@
+<form action="/profile/update/{{employee.id}}" method="post">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 mt-3 p-2">
+            <div class="form-group">
+                <label for="name" class="text-light">Name<span class="text-danger">*</span></label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name"
+                    value="{{employee.name}}" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-light">E-mail<span class="text-danger">*</span></label>
+                <input type="text" name="email" id="email" class="form-control" value="{{employee.email}}"
+                    placeholder="Enter Your E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="age" class="text-light">Age<span class="text-danger">*</span></label>
+                <input type="Number" name="age" id="age" value="{{employee.age}}" class="form-control"
+                    placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <label for="contact" class="text-light">Contact Number<span class="text-danger">*</span></label>
+                <input type="Number" name="contact" id="contact" class="form-control" value="{{employee.contactNo}}"
+                    placeholder="Enter Your Contact Number" required>
+            </div>
+            <div class="form-group">
+                <label for="salary" class="text-light">Salary<span class="text-danger">*</span></label>
+                <input type="Number" name="salary" id="salary" class="form-control" value="{{employee.salary}}"
+                    placeholder="Enter Your salary" required>
+            </div>
+            <div class="form-group">
+                <label for="skills" class="text-light">Skills<span class="text-danger">*</span></label>
+                <input type="text" name="skills" id="skills" class="form-control" value="{{employee.skills}}"
+                    placeholder="Enter the Skills You know" required>
+                <small class="text-danger">write skills in space separate(HTML CSS ---)</small>
+            </div>
+            <div class="form-group">
+                <label for="location" class="text-white">Address<span class="text-danger">*</span></label>
+                <input type="text" name="location" id="location" class="form-control" value="{{employee.location}}"
+                    placeholder="Enter Your permanent Address" required>
+            </div>
+            <hr />
+            <label for="details__bank" class="text-success details">Social Links</label>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="youtube" class="text-white"><i class="fab fa-github"
+                        aria-hidden="true"></i>&emsp;Github</label>
+                <input type="text" name="github" id="youtube" class="form-control" value="{{employee.social.github}}"
+                    placeholder="Youtube Channel Link">
+            </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="twitter" class="text-white"><i class="fab fa-twitter" aria-hidden="true"></i>&emsp;
+                    Twitter</label>
+                <input type="text" name="twitter" id="twitter" value="{{employee.social.twitter}}" class="form-control"
+                    placeholder="Twitter Profile Link">
+            </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="facebook" class="text-white"><i class="fab fa-facebook" aria-hidden="true"></i>&emsp;
+                    Facebook</label>
+                <input type="text" name="facebook" id="facebook" class="form-control"
+                    value="{{employee.social.facebook}}" placeholder="Facebook Profile Link">
+            </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="linkedin" class="text-white"><i class="fab fa-linkedin" aria-hidden="true"></i>&emsp;
+                    Linkedin</label>
+                <input type="text" name="linkedin" id="linkedin" class="form-control"
+                    value="{{employee.social.linkedin}}" placeholder="Linkedin Profile Link">
+            </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="instagram" class="text-white"><i class="fab fa-instagram" aria-hidden="true"></i>&emsp;
+                    Instagram</label>
+                <input type="text" name="instagram" id="instagram" class="form-control"
+                    value="{{employee.social.instagram}}" placeholder="Instagram Profile Link">
+            </div>
+        </div>
+
+        <div class="d-none d-md-block col-md-1 ml-auto">
+            <div class="line1"></div>
+        </div>
+
+        <div class="col-sm-12 col-md-5 mt-4 p-2">
+            <div class="d-flex justify-content-center">
+                <fieldset class="form-group">
+                    <label class="text-white text-center">Marital status</label>
+                    <div class="row">
+                        <div class="col-sm-10 ml-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="marital" id="gridRadios1"
+                                    value="unmarried" checked>
+                                <label class="form-check-label text-white" for="gridRadios1">
+                                    Unmarried
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="marital" id="gridRadios2"
+                                    value="married">
+                                <label class="form-check-label text-white" for="gridRadios2">
+                                    Married
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <label for="details__bank" class="text-success details">Bank Details<span
+                    class="text-danger">*</span></label>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="bank-name" class="text-white">Bank Name</label>
+                <input type="text" name="bank_name" id="bank-name" class="form-control"
+                    value="{{employee.bankDetails.bankName}}" placeholder="Enter Bank Name with branch details"
+                    required>
+            </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="account-number" class="text-white">Account Number</label>
+                <input type="Number" name="account_number" id="account-number" class="form-control"
+                    value="{{employee.bankDetails.accountNumber}}" placeholder="Enter the Account Number" required>
+            </div>
+            <hr />
+            <div class="form-group text-white">
+                <label for="ControlFile2" class="text-white">Description about Yourself<span
+                        class="text-danger">*</span></label>
+                <textarea name="description" placeholder="Description about yourself in less than 100 words"
+                    class="form-control" id="descriptionEmployee" required>{{employee.description}}</textarea>
+                <small class="text-muted">Describe about yourself like hardworking, smart, lazy...</small>
+            </div>
+            <div class="form-group text-white">
+                <label for="uploadPic" class="text-white">Upload Profile Picture<span
+                        class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="uploadPic"
+                    accept="image/gif, image/jpeg, image/png" name="profile_pic" required>
+            </div>
+            <hr />
+            <label for="details__bank" class="text-success details">Education<span class="text-danger">*</span></label>
+            <div class="form-group ml-4">
+                <label for="school" class="text-white mr-2">12<sup>th</sup> School</label>
+                <input name="school" type='text' class="form-control" id="school" value="{{employee.education.school}}"
+                    placeholder="High school Name" required>
+            </div>
+            <div class="form-group ml-4">
+                <label for="school_board" class="text-white mr-2">12<sup>th</sup> Board</label>
+                <input name="board" type='text' class="form-control" id="school_board"
+                    value="{{employee.education.board}}" placeholder="High school Board Name" required>
+            </div>
+            <div class="form-group ml-4">
+                <label for="college" class="text-white mr-2">College</label>
+                <input name="college" type='text' class="form-control" id="college"
+                    value="{{employee.education.college}}" placeholder="Name of Your college" required>
+            </div>
+            <div class="form-group ml-4">
+                <label for="college_branch" class="text-white mr-2">Branch</label>
+                <input name="branch" type='text' class="form-control" id="college_branch"
+                    value="{{employee.education.branch}}" placeholder="Branch of college" required>
+            </div>
+            <div class="form-group ml-4">
+                <label for="description_education" class="text-white mr-2">Description of Education</label>
+                <textarea name="description_of_education" id="description_education"
+                    placeholder="Description of percentage or CGPA you got at 10th, 12th and College"
+                    class="form-control" required>{{employee.education.description}}</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <small class="text-danger text-center">* Represents Required Fields.</small>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-6">
+            <input type="submit" value="Update" class="btn btn-success mb-4 btn-block" id="submit-button">
+        </div>
+    </div>
+</form>

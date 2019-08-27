@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
-const methodOverride = require('method-override');
 
 const app = express();
 
@@ -14,6 +13,7 @@ const {
     truncate,
     formatDate
 } = require('./helper/hbs');
+
 // Handlebar Middleware {defaultLayout: 'main'}
 app.engine('handlebars', exphbs({
     helpers: {
@@ -28,9 +28,7 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
-// method-override Middleware for delete, put, patch
-app.use(methodOverride('_method'));
+app.use(bodyParser.json());
 
 // To use static files like css, images
 app.use(express.static("public"));

@@ -34,23 +34,15 @@
                 <input type="file" class="form-control-file" id="uploadPic"
                     accept="image/gif, image/jpeg, image/png" name="profile_pic" required>
             </div>
+            <div class="form-group text-white">
+                <label for="uploadResume" class="text-white">Upload Resume<span class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="uploadResume"
+                    accept="application/pdf, application/txt, application/docs" name="resume" required>
+            </div>
             <div class="form-group">
                 <label for="location" class="text-white">Address<span class="text-danger">*</span></label>
                 <input type="text" name="location" id="location" class="form-control"
                     placeholder="Enter Your permanent Address" required>
-            </div>
-            <hr />
-            <label for="details__bank" class="text-success details">Bank Details<span
-                    class="text-danger">*</span></label>
-            <div class="form-group ml-4" id="details__bank">
-                <label for="bank-name" class="text-white">Bank Name</label>
-                <input type="text" name="bank_name" id="bank-name" class="form-control"
-                    placeholder="Enter Bank Name with branch details" required>
-            </div>
-            <div class="form-group ml-4" id="details__bank">
-                <label for="account-number" class="text-white">Account Number</label>
-                <input type="Number" name="account_number" id="account-number" class="form-control"
-                    placeholder="Enter the Account Number" required>
             </div>
             <hr />
             <label for="details__bank" class="text-success details">Social Links</label>
@@ -158,11 +150,19 @@
                 <option value="Quality control">Quality control</option>
             </select>
             <hr class="mt-3" />
-            <div class="form-group text-white">
-                <label for="uploadResume" class="text-white">Upload Resume<span class="text-danger">*</span></label>
-                <input type="file" class="form-control-file" id="uploadResume"
-                    accept="application/pdf, application/txt, application/docs" name="resume" required>
+            <label for="details__bank" class="text-success details">Bank Details<span
+                    class="text-danger">*</span></label>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="bank-name" class="text-white">Bank Name</label>
+                <input type="text" name="bank_name" id="bank-name" class="form-control"
+                    placeholder="Enter Bank Name with branch details" required>
             </div>
+            <div class="form-group ml-4" id="details__bank">
+                <label for="account-number" class="text-white">Account Number</label>
+                <input type="Number" name="account_number" id="account-number" class="form-control"
+                    placeholder="Enter the Account Number" required>
+            </div>
+            <hr />
             <div class="form-group text-white">
                 <label for="ControlFile2" class="text-white">Description about Yourself<span
                         class="text-danger">*</span></label>
