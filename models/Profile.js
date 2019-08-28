@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Employee Schema
 const ProfileSchema = new mongoose.Schema({
     profilePic: {
         type: String,
@@ -46,10 +47,6 @@ const ProfileSchema = new mongoose.Schema({
     },
     post: {
         type: String
-    },
-    resume: {
-        type: String,
-        required: true
     },
     description: {
         type: String,

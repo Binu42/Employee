@@ -1,7 +1,7 @@
 <div class="row bg-light employee-details">
     <div class="col-sm-12 col-md-6 mt-4">
         <div class="d-flex justify-content-center">
-            <img src="img/person.jpg" class="rounded-circle w-50">
+            <img src="{{employee.profilePic}}" class="rounded-circle w-50">
         </div>
         <div class="d-flex justify-content-center mt-5">
             <h4 class="text-muted">{{employee.post}}</h4>
@@ -152,12 +152,20 @@
         <div class="pl-2">
             <table class="table table-responsive-sm full-table table-borderless">
                 <tr>
-                    <td><h4>Bank Name</h4></td>
-                    <td><h4>{{employee.bankDetails.bankName}}</h4></td>
+                    <td>
+                        <h4>Bank Name</h4>
+                    </td>
+                    <td>
+                        <h4>{{employee.bankDetails.bankName}}</h4>
+                    </td>
                 </tr>
                 <tr>
-                    <td><h4>Account Number</h4></td>
-                    <td><h4>{{employee.bankDetails.accountNumber}}</h4></td>
+                    <td>
+                        <h4>Account Number</h4>
+                    </td>
+                    <td>
+                        <h4>{{employee.bankDetails.accountNumber}}</h4>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -170,24 +178,44 @@
             <table class="table table-responsive-sm full-table table-borderless">
                 <tbody>
                     <tr>
-                        <td><h4>School</h4></td>
-                        <td><h4>{{employee.education.school}}</h4></td>
+                        <td>
+                            <h4>School</h4>
+                        </td>
+                        <td>
+                            <h4>{{employee.education.school}}</h4>
+                        </td>
                     </tr>
                     <tr>
-                        <td><h4>Board</h4></td>
-                        <td><h4>{{employee.education.board}}</h4></td>
+                        <td>
+                            <h4>Board</h4>
+                        </td>
+                        <td>
+                            <h4>{{employee.education.board}}</h4>
+                        </td>
                     </tr>
                     <tr>
-                        <td><h4>College</h4></td>
-                        <td><h4>{{employee.education.college}}</h4></td>
+                        <td>
+                            <h4>College</h4>
+                        </td>
+                        <td>
+                            <h4>{{employee.education.college}}</h4>
+                        </td>
                     </tr>
                     <tr>
-                        <td><h4>Branch</h4></td>
-                        <td><h4>{{employee.education.branch}}</h4></td>
+                        <td>
+                            <h4>Branch</h4>
+                        </td>
+                        <td>
+                            <h4>{{employee.education.branch}}</h4>
+                        </td>
                     </tr>
                     <tr>
-                        <td><h4>Description</h4></td>
-                        <td><h4>{{employee.education.description}}</h4></td>
+                        <td>
+                            <h4>Description</h4>
+                        </td>
+                        <td>
+                            <h4>{{employee.education.description}}</h4>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -196,8 +224,10 @@
     <div class="col-sm-12 mb-2">
         <div class="d-flex justify-content-center">
             <div class="btn-group" role="group">
-                <a href="/profile/edit/{{employee.id}}" class="btn btn-dark"><i class="fa fa-pen" aria-hidden="true"></i>&emsp;Edit &emsp;</a>
-                <a href="/profile/delete/{{employee.id}}" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i>&emsp;Delete&emsp;</a>
+                <a href="/profile/edit/{{employee.id}}" class="btn btn-dark"><i class="fa fa-pen"
+                        aria-hidden="true"></i>&emsp;Edit &emsp;</a>
+                <a href="/profile/delete/{{employee.id}}" class="btn btn-danger"><i class="fa fa-trash"
+                        aria-hidden="true"></i>&emsp;Delete&emsp;</a>
             </div>
         </div>
     </div>

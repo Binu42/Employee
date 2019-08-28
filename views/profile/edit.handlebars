@@ -1,4 +1,4 @@
-<form action="/profile/update/{{employee.id}}" method="post">
+<form action="/profile/update/{{employee.id}}" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="col-sm-12 col-md-6 mt-3 p-2">
             <div class="form-group">
@@ -123,8 +123,8 @@
             <div class="form-group text-white">
                 <label for="uploadPic" class="text-white">Upload Profile Picture<span
                         class="text-danger">*</span></label>
-                <input type="file" class="form-control-file" id="uploadPic"
-                    accept="image/gif, image/jpeg, image/png" name="profile_pic" required>
+                <input type="file" class="form-control-file" id="uploadPic" accept="image/gif, image/jpeg, image/png"
+                    name="profile_pic" required>
             </div>
             <hr />
             <label for="details__bank" class="text-success details">Education<span class="text-danger">*</span></label>

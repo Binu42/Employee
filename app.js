@@ -1,14 +1,15 @@
+// to make my password, api keys secure
 require('dotenv').config();
 // Dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
-
 const app = express();
 
 const connectDB = require('./config/db');
 const Profile = require('./models/Profile');
 
+// acquiring helpers to format date and truncate description
 const {
     truncate,
     formatDate
@@ -33,19 +34,24 @@ app.use(bodyParser.json());
 // To use static files like css, images
 app.use(express.static("public"));
 
-// load Routes
-const profile = require('./routes/profile');
-
-app.use('/profile', profile);
-
 // MongoDB connection
 connectDB();
 
+// load Routes
+const profile = require('./routes/profile');
+
+// routing all /profile/* route to profile router
+app.use('/profile', profile);
+
+
+// route to get home page of website
 app.get('/', (req, res) => {
     Profile.find({})
-    .then(employees => {
-        res.render('profile/index', {profile: employees});
-    })
+        .then(employees => {
+            res.render('profile/index', {
+                profile: employees
+            });
+        })
 })
 
 // Listening Port

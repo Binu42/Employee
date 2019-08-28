@@ -9,7 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p {
     margin: 0;
 }
 
@@ -19,9 +19,14 @@ p{
     border-image-slice: 1;
 }
 
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 22px;
+}
+
 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=fff') !important;
-    }
+}
 
 .footer {
     margin-top: auto;
@@ -95,7 +100,7 @@ li a:hover {
 .line {
     margin-left: 30px;
     border-left: 2px solid green;
-    height: 195vh;
+    height: 185vh;
 }
 
 .line1 {
@@ -139,34 +144,40 @@ input:hover {
     font-size: 19px;
 }
 
-.col-sm-12{
+.col-sm-12 {
     padding: 0;
 }
 
-.employee-details{
+.employee-details {
     min-height: 100vh;
 }
 
 full-table th {
-    text-align: center; 
- }
- 
- @media(min-width: 45rem){
+    text-align: center;
+}
+
+@media(min-width: 45rem) {
     .full-table {
         margin: auto;
-        width: 80% !important; 
-     }
- }
+        width: 80% !important;
+    }
+}
 
- .no-employee{
-     background-image: url(../img/person.jpg);
-     width: 100%;
-     height: 80vh;
-     background-repeat: no-repeat;
-     background-size: cover;
-     border-radius: 10px;
- }
+.no-employee {
+    background-image: url(../img/person.jpg);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
 
- .card-description{
-     height: 105px;
- }
+.card-description {
+    height: 105px;
+}
+
+@media(min-width: 380px) and (max-width: 750px){
+    .card-width{
+        height: 550px;
+    }
+}
