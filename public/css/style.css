@@ -77,7 +77,7 @@ p {
 }
 
 .card-width {
-    height: 450px;
+    height: 470px;
 }
 
 .card:hover .fab {
@@ -173,12 +173,12 @@ full-table th {
 }
 
 .card-description {
-    height: 105px;
+    height: 125px;
 }
 
-@media(min-width: 380px) and (max-width: 750px){
+@media(min-width: 390px) and (max-width: 768px){
     .card-width{
-        height: 530px;
+        height: 565px;
     }
 }
 
