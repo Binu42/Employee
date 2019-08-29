@@ -4,7 +4,8 @@
   "description": "employee management for LUFYTECH",
   "main": "app.js",
   "scripts": {
-    "server": "nodemon app"
+    "server": "nodemon app",
+    "start": "node app.js"
   },
   "engines": {
     "node": "10.16.3"
