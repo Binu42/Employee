@@ -178,6 +178,11 @@ full-table th {
 
 @media(min-width: 380px) and (max-width: 750px){
     .card-width{
-        height: 550px;
+        height: 530px;
     }
+}
+
+.code a{
+    text-decoration: none;
+    color: #0ef3ef;
 }
