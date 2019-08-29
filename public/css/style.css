@@ -112,7 +112,7 @@ li a:hover {
 .line-horizontal {
     padding-top: 2px;
     padding-left: 20px;
-    border-top: 2px solid green;
+    border-top: 2px solid #c21414;
     border-bottom: 2px solid #09ff00;
     width: 100%;
     height: 45px;
@@ -185,4 +185,10 @@ full-table th {
 .code a{
     text-decoration: none;
     color: #0ef3ef;
+}
+
+.heading-info{
+    font-size: 25px;
+    font-weight: bold;
+    color: #00c3ff;
 }
