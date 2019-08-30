@@ -150,6 +150,7 @@ input:hover {
 
 .employee-details {
     min-height: 100vh;
+    background-image: url('../img/blackboard.jpg');
 }
 
 full-table th {
@@ -191,4 +192,8 @@ full-table th {
     font-size: 25px;
     font-weight: bold;
     color: #00c3ff;
+}
+
+.card{
+    background-image: url('../img/bg.jpg');
 }

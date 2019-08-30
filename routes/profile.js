@@ -67,9 +67,6 @@ router.post('/add', upload.single('profile_pic'), async (req, res) => {
         .then(employee => {
             res.redirect('/');
         })
-        .catch(error => {
-            console.log(error);
-        });
 })
 
 // route to show employee full details
@@ -82,10 +79,6 @@ router.get('/:id', (req, res) => {
                 employee: employee
             });
         })
-        .catch(error => {
-            console.log(error);
-            res.redirect('/');
-        })
 });
 
 // route to delete employee details
@@ -94,10 +87,6 @@ router.get('/delete/:id', (req, res) => {
             _id: req.params.id
         })
         .then(() => {
-            res.redirect('/');
-        })
-        .catch(error => {
-            console.log(error);
             res.redirect('/');
         })
 })
@@ -111,10 +100,6 @@ router.get('/edit/:id', (req, res) => {
             res.render('profile/edit', {
                 employee: employee
             });
-        })
-        .catch(error => {
-            console.log(error);
-            res.redirect('/');
         })
 })
 
@@ -162,10 +147,6 @@ router.post('/update/:id', upload.single('profile_pic'), async (req, res) => {
                     console.log(error);
                 });
         })
-        .catch(error => {
-            console.log(error);
-            res.redirect('/');
-        })
 })
 
 // route for searching of employee
@@ -182,10 +163,6 @@ router.post('/search', (req, res) => {
             res.render('profile/index', {
                 profile: searchedEmp
             })
-        })
-        .catch(error => {
-            console.log(error);
-            res.redirect('/');
         })
 })
 

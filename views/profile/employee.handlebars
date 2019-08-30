@@ -1,10 +1,10 @@
-<div class="row bg-light employee-details">
+<div class="row employee-details">
     <div class="col-sm-12 col-md-6 mt-4 mb-3">
         <div class="d-flex justify-content-center">
             <img src="{{employee.profilePic}}" class="rounded-circle w-50">
         </div>
         <div class="d-flex justify-content-center mt-3">
-            <h4 class="text-muted">{{employee.post}}</h4>
+            <h4 class="text-light">{{employee.post}}</h4>
         </div>
         <div class="d-flex justify-content-center">
             <div class="p-2">
@@ -33,11 +33,11 @@
     <div class="col-sm-12 col-md-6 mt-5">
         <div class="pl-2">
             <div class="d-flex justify-content-center">
-                <h4 class="text-dark text-uppercase heading-info">{{employee.name}}</h4>
+                <h4 class="text-light text-uppercase heading-info">{{employee.name}}</h4>
             </div>
             <hr />
             <table class="table table-responsive-lg table-borderless">
-                <tbody>
+                <tbody class="text-light">
                     <tr>
                         <td>
                             <h4>Age</h4>
@@ -87,11 +87,11 @@
     </div>
     <div class="col-sm-12 col-md-12 mt-4">
         <div class="pl-2">
-            <h4 class="text-muted text-center">
+            <h4 class="text-success text-center">
                 {{employee.description}}
             </h4>
             <table class="table table-responsive-sm table-borderless full-table">
-                <tbody>
+                <tbody class="text-light">
                     <tr>
                         <td>
                             <h4>Joining Date</h4>
@@ -149,7 +149,7 @@
     </div>
     <div class="col-sm-12 col-md-12 mt-4">
         <div class="pl-2">
-            <table class="table table-responsive-sm full-table table-borderless">
+            <table class="table text-light table-responsive-sm full-table table-borderless">
                 <tr>
                     <td>
                         <h4>Bank Name</h4>
@@ -175,7 +175,7 @@
     <div class="col-sm-12 col-md-12 mt-4 mb-4">
         <div class="pl-2">
             <table class="table table-responsive-sm full-table table-borderless">
-                <tbody>
+                <tbody class="text-light">
                     <tr>
                         <td>
                             <h4>School</h4>
@@ -223,7 +223,7 @@
     <div class="col-sm-12 mb-2">
         <div class="d-flex justify-content-center">
             <div class="btn-group" role="group">
-                <a href="/profile/edit/{{employee.id}}" class="btn btn-dark"><i class="fa fa-pen"
+                <a href="/profile/edit/{{employee.id}}" class="btn btn-warning"><i class="fa fa-pen"
                         aria-hidden="true"></i>&emsp;Edit &emsp;</a>
                 <a href="/profile/delete/{{employee.id}}" class="btn btn-danger"><i class="fa fa-trash"
                         aria-hidden="true"></i>&emsp;Delete&emsp;</a>
