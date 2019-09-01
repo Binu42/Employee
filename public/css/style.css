@@ -33,6 +33,10 @@ p {
     color: white;
     text-align: center;
     background: #000;
+    background-image: url('../img/wave.svg');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fab {
@@ -65,6 +69,10 @@ p {
 
 .fa-twitter {
     color: #28A9E1;
+}
+
+.fa-git-square{
+    color: #fff;
 }
 
 .top {
@@ -187,7 +195,7 @@ full-table th {
 
 .code a{
     text-decoration: none;
-    color: #0ef3ef;
+    color: #9b9b9b;
 }
 
 .heading-info{
