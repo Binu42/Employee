@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
 })
 
 // Listening Port
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 // Setting server
 app.listen(port, () => {
     console.log(`server is Running at port ${port}`);
